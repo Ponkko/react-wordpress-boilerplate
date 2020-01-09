@@ -1,0 +1,30 @@
+.navigationWrapper {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgb(214, 63, 63);
+  padding: 0 !important;
+
+  .navigationItem {
+    cursor: pointer;
+    color: black;
+    padding: 5px 10px;
+
+    .navigationLink {
+      color: black;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: rgb(214, 63, 63);
+      color: white;
+
+      .navigationLink {
+        color: white;
+      }
+    }
+  }
+
+  .test {
+    padding: 0px;
+  }
+}
