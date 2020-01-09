@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './styles.css';
 
 import {
   useParams,
@@ -11,7 +10,6 @@ function createMarkup(content) {
 
 const Page = ({ pages = {} }) => {
   const { pageSlug } = useParams();
-  console.log('pageSlug', pageSlug);
   const page = pages.find(p => p.slug === (pageSlug || 'home'))
 
   const subPages = pages.filter(p => p.parent === page.id)
